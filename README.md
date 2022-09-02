@@ -1,7 +1,7 @@
 # SCXN_BoilerplateCSS
- SCXN boilerplate style
+**SCXN Boilerplate Style**
 
-Providing handy tools:
+*Providing handy tools:*
 - Pop a block open to 100% of the viewport height with .sH ("superHeight")
 - .sC ("superCenterer") to quickly "superCenter" a child via flex/Column/Justify-content-center
 
@@ -48,12 +48,19 @@ Providing handy tools:
 - Font and Color variables like var(--f1) or var(--c6) change up a document's appearence fast
 - Font swap quickly with .f1 through .f6
 - Text sizing tools like .mM .sM and .mB ("mediumMini", "StandardMini" and "mediumBiggie")
-- Flip text color and size in a snap
-  
+- Flip text color and size in a snap.  For instance, ".tW" flips text white
+ 
+        <style>
+         a{
+          color: black; /*won't show-up on dark backGround -- make lighter*/
+          font-size: 3px; /*too small -- make bigger*/
+         }
+        </style>
         <p>
          Here is an awesome 
-          <a href="" class="tW noHover noDecoration"> link
+          <a href="" class="tW noHover noDecoration sM"> 
+           link
           </a>
-         to something great.  It will always be text-color: white; and of course, no backgound or underline (even on mouse events)
+         to something great.  It will always be text-color: white; and of course, no backgound or underline (even on mouse events).  It's also a decent size since we called "standardMini" (.sM).
         </p>
          
